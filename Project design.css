@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./assignment%20pictures/background%202.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.fly-in-text {
+    text-align: center;
+    margin-left: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position:relative;
+    top: -50px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(77, 58, 37);
+    animation: flyIn 1s ease-in-out forwards; /* Fly-in animation */
+}
+
+@keyframes flyIn {
+    0% {
+        top: -50px;
+    }
+    100% {
+        top: 20px;
+    }
+}
+
+.firstpic {
+    float: left;
+    width: 450px;
+    height: 500px;
+    border: solid rgb(243, 238, 238) 1px;
+    padding: 60px, 60px;
+    border-radius: 100px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    vertical-align: middle;
+}
+
+.textbox {
+    margin-top: 20px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.text {
+    text-align: right;
+    padding-right: 40px;
+    vertical-align: middle;
+    display: inline-block;
+    color: rgb(58, 47, 9);
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.giveaway{
+    margin-bottom: 20px;
+}
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.container {
+    margin: 80px auto;
+    width: 70%;
+    position: relative;
+}
+
+.countdown-container span {
+   
+    flex-direction: column;
+    justify-content: space-between;
+    color: black;
+    text-align: center;
+    /* margin-right: 180px;  */
+    display: inline-block;
+    padding: 0.1rem;
+    width: 80px;
+    margin: 0.1rem;
+    border: 1.3px gray solid;
+}
+.countdown-container {
+    min-height: 200vh;
+    display: flex;
+    justify-content: space-evenly; 
+ 
+    color: black;
+    text-align: center;
+    margin-right: 180px;
+}
+
+/* .countdown-container span {
+    /* position:relative; */
+    
+    /* display:grid; */
+    /* padding: 0.5rem; */
+    /* width: 80px; */
+    /* margin: 0.1rem; */
+    /* border: 0.8px gray solid; */
+ 
+    
+    .countdown-container {
+        min-height: auto;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        color: black;
+        text-align: center;
+    }
+    
+    .countdown-container .countdown-day,
+    .countdown-container .countdown-hour,
+    .countdown-container .countdown-mins,
+    .countdown-container .countdown-secs {
+        flex: 1;
+        max-width: 100px;
+        margin: 5px;
+    }
+    
+    .countdown-container span {
+        display: inline-block; /* Ensure each timer value is on a new line */
+    }
+
+    @media only screen and (max-width: 480px) {
+        .countdown-container {
+            justify-content: flex-start; /* Move the timer to the left on smaller screens */
+        }
+    }
